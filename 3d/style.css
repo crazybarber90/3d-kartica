@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 3200px;
+}
+
+.container{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+.card{
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 3rem;
+    box-shadow: 0 20px 20px rgba(31, 219, 219, 0.349),
+    0px 0px 50px rgba(146, 73, 230, 0.623);
+}
+
+.telefon {
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telefon img {
+    width: 9rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle {
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(
+            to right,
+            rgba(245,70,66,0.75),
+            rgba(8,83,156,0.75)
+            );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    transition: all 0.75s ease-out;
+}
+
+.info h3{
+    font-size: 1.2rem;
+    padding: 1rem 0rem;
+    color: #464545;
+    font-weight: bold;
+    transition: all 0.75s ease-out;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.sizes button {
+    padding: 0.5rem 1.3rem;
+    margin-right: 5px;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+    outline: none;
+}
+
+button.active {
+    background: #585858;
+    color: wheat;
+}
+button:hover {
+    background: #f54642;
+    color: white;
+    transition: .3s ease;
+}
+
+.purchase {
+    margin: 2rem 0rem 1rem;
+    transition: all 0.75s ease-out;
+}
+
+.purchase button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #f54642;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    transition: all 0.75s ease-out;
+    outline: none;
+}
